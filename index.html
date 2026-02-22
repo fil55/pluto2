@@ -1,331 +1,1230 @@
-<html lang="it">
-<html xmlns:v="urn:schemas-microsoft-com:vml"
+html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:x="urn:schemas-microsoft-com:office:excel"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
-<meta name="Excel Workbook Frameset">
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=ProgId content=Excel.Sheet>
 <meta name=Generator content="Microsoft Excel 15">
-<link rel=File-List href="lotto%20074%20_file/filelist.xml">
-<![if !supportTabStrip]>
-<link id="shLink" href="lotto%20074%20_file/sheet001.htm">
-<link id="shLink" href="lotto%20074%20_file/sheet002.htm">
-
-<link id="shLink">
-
-<script language="JavaScript">
+<link id=Main-File rel=Main-File href="../lotto%20074%20.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
 <!--
- var c_lTabs=2;
-
- var c_rgszSh=new Array(c_lTabs);
- c_rgszSh[0] = "Risultato (7)";
- c_rgszSh[1] = "chiuse";
-
-
-
- var c_rgszClr=new Array(8);
- c_rgszClr[0]="window";
- c_rgszClr[1]="buttonface";
- c_rgszClr[2]="windowframe";
- c_rgszClr[3]="windowtext";
- c_rgszClr[4]="threedlightshadow";
- c_rgszClr[5]="threedhighlight";
- c_rgszClr[6]="threeddarkshadow";
- c_rgszClr[7]="threedshadow";
-
- var g_iShCur;
- var g_rglTabX=new Array(c_lTabs);
-
-function fnGetIEVer()
-{
- var ua=window.navigator.userAgent
- var msie=ua.indexOf("MSIE")
- if (msie>0 && window.navigator.platform=="Win32")
-  return parseInt(ua.substring(msie+5,ua.indexOf(".", msie)));
- else
-  return 0;
-}
-
-function fnBuildFrameset()
-{
- var szHTML="<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\""+document.all.item("shLink")[0].href+"\" name=\"frSheet\" noresize>"+
-  "<frameset cols=\"54,*\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\"\" name=\"frScroll\" marginwidth=0 marginheight=0 scrolling=no>"+
-  "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>"+
-  "</frameset></frameset><plaintext>";
-
- with (document) {
-  open("text/html","replace");
-  write(szHTML);
-  close();
- }
-
- fnBuildTabStrip();
-}
-
-function fnBuildTabStrip()
-{
- var szHTML=
-  "<html><head><style>.clScroll {font:8pt Courier New;color:"+c_rgszClr[6]+";cursor:default;line-height:10pt;}"+
-  ".clScroll2 {font:10pt Arial;color:"+c_rgszClr[6]+";cursor:default;line-height:11pt;}</style></head>"+
-  "<body onclick=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" onselectstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+" topmargin=0 leftmargin=0><table cellpadding=0 cellspacing=0 width=100%>"+
-  "<tr><td colspan=6 height=1 bgcolor="+c_rgszClr[2]+"></td></tr>"+
-  "<tr><td style=\"font:1pt\">&nbsp;<td>"+
-  "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(0);\" onmouseout=\"parent.fnMouseOutScroll(0);\"><a>&#171;</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(0);\" ondblclick=\"parent.fnScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(1);\" onmouseout=\"parent.fnMouseOutScroll(1);\"><a>&lt</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(1);\" ondblclick=\"parent.fnScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(2);\" onmouseout=\"parent.fnMouseOutScroll(2);\"><a>&gt</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(3);\" onmouseout=\"parent.fnMouseOutScroll(3);\"><a>&#187;</a></td>"+
-  "<td style=\"font:1pt\">&nbsp;<td></tr></table></body></html>";
-
- with (frames['frScroll'].document) {
-  open("text/html","replace");
-  write(szHTML);
-  close();
- }
-
- szHTML =
-  "<html><head>"+
-  "<style>A:link,A:visited,A:active {text-decoration:none;"+"color:"+c_rgszClr[3]+";}"+
-  ".clTab {cursor:hand;background:"+c_rgszClr[1]+";font:9pt Arial;padding-left:3px;padding-right:3px;text-align:center;}"+
-  ".clBorder {background:"+c_rgszClr[2]+";font:1pt;}"+
-  "</style></head><body onload=\"parent.fnInit();\" onselectstart=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+
-  " topmargin=0 leftmargin=0><table id=tbTabs cellpadding=0 cellspacing=0>";
-
- var iCellCount=(c_lTabs+1)*2;
-
- var i;
- for (i=0;i<iCellCount;i+=2)
-  szHTML+="<col width=1><col>";
-
- var iRow;
- for (iRow=0;iRow<6;iRow++) {
-
-  szHTML+="<tr>";
-
-  if (iRow==5)
-   szHTML+="<td colspan="+iCellCount+"></td>";
-  else {
-   if (iRow==0) {
-    for(i=0;i<iCellCount;i++)
-     szHTML+="<td height=1 class=\"clBorder\"></td>";
-   } else if (iRow==1) {
-    for(i=0;i<c_lTabs;i++) {
-     szHTML+="<td height=1 nowrap class=\"clBorder\">&nbsp;</td>";
-     szHTML+=
-      "<td id=tdTab height=1 nowrap class=\"clTab\" onmouseover=\"parent.fnMouseOverTab("+i+");\" onmouseout=\"parent.fnMouseOutTab("+i+");\">"+
-      "<a href=\""+document.all.item("shLink")[i].href+"\" target=\"frSheet\" id=aTab>&nbsp;"+c_rgszSh[i]+"&nbsp;</a></td>";
-    }
-    szHTML+="<td id=tdTab height=1 nowrap class=\"clBorder\"><a id=aTab>&nbsp;</a></td><td width=100%></td>";
-   } else if (iRow==2) {
-    for (i=0;i<c_lTabs;i++)
-     szHTML+="<td height=1></td><td height=1 class=\"clBorder\"></td>";
-    szHTML+="<td height=1></td><td height=1></td>";
-   } else if (iRow==3) {
-    for (i=0;i<iCellCount;i++)
-     szHTML+="<td height=1></td>";
-   } else if (iRow==4) {
-    for (i=0;i<c_lTabs;i++)
-     szHTML+="<td height=1 width=1></td><td height=1></td>";
-    szHTML+="<td height=1 width=1></td><td></td>";
-   }
-  }
-  szHTML+="</tr>";
- }
-
- szHTML+="</table></body></html>";
- with (frames['frTabs'].document) {
-  open("text/html","replace");
-  charset=document.charset;
-  write(szHTML);
-  close();
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
  }
 }
 
-function fnInit()
-{
- g_rglTabX[0]=0;
- var i;
- for (i=1;i<=c_lTabs;i++)
-  with (frames['frTabs'].document.all.tbTabs.rows[1].cells[fnTabToCol(i-1)])
-   g_rglTabX[i]=offsetLeft+offsetWidth-6;
-}
-
-function fnTabToCol(iTab)
-{
- return 2*iTab+1;
-}
-
-function fnNextTab(fDir)
-{
- var iNextTab=-1;
- var i;
-
- with (frames['frTabs'].document.body) {
-  if (fDir==0) {
-   if (scrollLeft>0) {
-    for (i=0;i<c_lTabs&&g_rglTabX[i]<scrollLeft;i++);
-    if (i<c_lTabs)
-     iNextTab=i-1;
-   }
-  } else {
-   if (g_rglTabX[c_lTabs]+6>offsetWidth+scrollLeft) {
-    for (i=0;i<c_lTabs&&g_rglTabX[i]<=scrollLeft;i++);
-    if (i<c_lTabs)
-     iNextTab=i;
-   }
-  }
- }
- return iNextTab;
-}
-
-function fnScrollTabs(fDir)
-{
- var iNextTab=fnNextTab(fDir);
-
- if (iNextTab>=0) {
-  frames['frTabs'].scroll(g_rglTabX[iNextTab],0);
-  return true;
- } else
-  return false;
-}
-
-function fnFastScrollTabs(fDir)
-{
- if (c_lTabs>16)
-  frames['frTabs'].scroll(g_rglTabX[fDir?c_lTabs-1:0],0);
- else
-  if (fnScrollTabs(fDir)>0) window.setTimeout("fnFastScrollTabs("+fDir+");",5);
-}
-
-function fnSetTabProps(iTab,fActive)
-{
- var iCol=fnTabToCol(iTab);
- var i;
-
- if (iTab>=0) {
-  with (frames['frTabs'].document.all) {
-   with (tbTabs) {
-    for (i=0;i<=4;i++) {
-     with (rows[i]) {
-      if (i==0)
-       cells[iCol].style.background=c_rgszClr[fActive?0:2];
-      else if (i>0 && i<4) {
-       if (fActive) {
-        cells[iCol-1].style.background=c_rgszClr[2];
-        cells[iCol].style.background=c_rgszClr[0];
-        cells[iCol+1].style.background=c_rgszClr[2];
-       } else {
-        if (i==1) {
-         cells[iCol-1].style.background=c_rgszClr[2];
-         cells[iCol].style.background=c_rgszClr[1];
-         cells[iCol+1].style.background=c_rgszClr[2];
-        } else {
-         cells[iCol-1].style.background=c_rgszClr[4];
-         cells[iCol].style.background=c_rgszClr[(i==2)?2:4];
-         cells[iCol+1].style.background=c_rgszClr[4];
-        }
-       }
-      } else
-       cells[iCol].style.background=c_rgszClr[fActive?2:4];
-     }
-    }
-   }
-   with (aTab[iTab].style) {
-    cursor=(fActive?"default":"hand");
-    color=c_rgszClr[3];
-   }
-  }
- }
-}
-
-function fnMouseOverScroll(iCtl)
-{
- frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[7];
-}
-
-function fnMouseOutScroll(iCtl)
-{
- frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[6];
-}
-
-function fnMouseOverTab(iTab)
-{
- if (iTab!=g_iShCur) {
-  var iCol=fnTabToCol(iTab);
-  with (frames['frTabs'].document.all) {
-   tdTab[iTab].style.background=c_rgszClr[5];
-  }
- }
-}
-
-function fnMouseOutTab(iTab)
-{
- if (iTab>=0) {
-  var elFrom=frames['frTabs'].event.srcElement;
-  var elTo=frames['frTabs'].event.toElement;
-
-  if ((!elTo) ||
-   (elFrom.tagName==elTo.tagName) ||
-   (elTo.tagName=="A" && elTo.parentElement!=elFrom) ||
-   (elFrom.tagName=="A" && elFrom.parentElement!=elTo)) {
-
-   if (iTab!=g_iShCur) {
-    with (frames['frTabs'].document.all) {
-     tdTab[iTab].style.background=c_rgszClr[1];
-    }
-   }
-  }
- }
-}
-
-function fnSetActiveSheet(iSh)
-{
- if (iSh!=g_iShCur) {
-  fnSetTabProps(g_iShCur,false);
-  fnSetTabProps(iSh,true);
-  g_iShCur=iSh;
- }
-}
-
- window.g_iIEVer=fnGetIEVer();
- if (window.g_iIEVer>=4)
-  fnBuildFrameset();
+if (window.name!="frSheet")
+ window.location.replace("../lotto%20074%20.htm");
+else
+ fnUpdateTabs();
 //-->
 </script>
-<![endif]><!--[if gte mso 9]><xml>
- <x:ExcelWorkbook>
-  <x:ExcelWorksheets>
-   <x:ExcelWorksheet>
-    <x:Name>Risultato (7)</x:Name>
-    <x:WorksheetSource HRef="lotto%20074%20_file/sheet001.htm"/>
-   </x:ExcelWorksheet>
-   <x:ExcelWorksheet>
-    <x:Name>chiuse</x:Name>
-    <x:WorksheetSource HRef="lotto%20074%20_file/sheet002.htm"/>
-   </x:ExcelWorksheet>
-  </x:ExcelWorksheets>
-  <x:Stylesheet HRef="lotto%20074%20_file/stylesheet.css"/>
-  <x:WindowHeight>7035</x:WindowHeight>
-  <x:WindowWidth>22635</x:WindowWidth>
-  <x:WindowTopX>32767</x:WindowTopX>
-  <x:WindowTopY>32767</x:WindowTopY>
-  <x:ProtectStructure>False</x:ProtectStructure>
-  <x:ProtectWindows>False</x:ProtectWindows>
- </x:ExcelWorkbook>
-</xml><![endif]-->
+<![endif]>
 </head>
 
-<frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
- <frame src="lotto%20074%20_file/sheet001.htm" name="frSheet">
- <frame src="lotto%20074%20_file/tabstrip.htm" name="frTabs" marginwidth=0 marginheight=0>
- <noframes>
-  <body>
-   <p>La pagina utilizza i frame, ma il browser in uso non li supporta.</p>
-  </body>
- </noframes>
-</frameset>
+<body link="#0563C1" vlink="#954F72">
+
+<table border=0 cellpadding=0 cellspacing=0 width=1713 style='border-collapse:
+ collapse;table-layout:fixed;width:1286pt'>
+ <col width=194 style='mso-width-source:userset;mso-width-alt:7094;width:146pt'>
+ <col width=316 style='mso-width-source:userset;mso-width-alt:11556;width:237pt'>
+ <col width=240 style='mso-width-source:userset;mso-width-alt:8777;width:180pt'>
+ <col width=112 style='mso-width-source:userset;mso-width-alt:4096;width:84pt'>
+ <col width=64 style='width:48pt'>
+ <col width=126 style='mso-width-source:userset;mso-width-alt:4608;width:95pt'>
+ <col width=661 style='mso-width-source:userset;mso-width-alt:24173;width:496pt'>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 width=194 style='height:15.0pt;width:146pt'>Cedente</td>
+  <td class=xl66 width=316 style='width:237pt'>Nominativo</td>
+  <td class=xl66 width=240 style='width:180pt'>Indirizzo</td>
+  <td class=xl66 width=112 style='width:84pt'>Comune</td>
+  <td class=xl66 width=64 style='width:48pt'>Affidato</td>
+  <td class=xl67 colspan=2 width=787 style='mso-ignore:colspan;width:591pt'>N.
+  Pratiche: 49 - Totale euro: 516.208,72</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=41 style='height:30.75pt'>
+  <td height=41 class=xl68 width=194 style='height:30.75pt;width:146pt'>FIND 15
+  veicolo usato</td>
+  <td class=xl69 width=316 style='width:237pt'>DE ROSA ANTONINO GIOVANNI
+  SALVATORE 22/09/1977</td>
+  <td class=xl69 width=240 style='width:180pt'>V. G GARIBALDI 250</td>
+  <td class=xl69 width=112 style='width:84pt'>VIAGRANDE</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>6.963,35</td>
+  <td class=xl67 align=right>3937381277</td>
+  <td class=xl72 width=661 style='width:496pt'>g5-v6-parla in famiglia <font
+  class="font8">rit. M11-g12-</font><font class="font0">invia doc-m17-invia
+  doc-v20-ch</font></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>pdr 21.6.24 110x50 5.500</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393937381277&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393937381277&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>INTESA
+  SANPAOLO 17</td>
+  <td class=xl69 width=316 style='width:237pt'>DE ROSA ANTONINO GIOVANNI
+  SALVATORE<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=240 style='width:180pt'>V. G GARIBALDI 250</td>
+  <td class=xl69 width=112 style='width:84pt'>VIAGRANDE</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>16.336,66</td>
+  <td></td>
+  <td>ant77a@libero.it</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>pdr 3.6.22 120x108,00 13.068</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>pdr 3.6.24 110x50,00 70x100
+  12.500</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl75 width=240 style='width:180pt'></td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74></td>
+  <td class=xl73></td>
+ </tr>
+ <tr height=31 style='mso-height-source:userset;height:23.25pt'>
+  <td height=31 class=xl76 width=194 style='height:23.25pt;width:146pt'>.--------------------------</td>
+  <td class=xl77 width=316 style='width:237pt'>.--------------------------------------------------</td>
+  <td class=xl79 width=240 style='width:180pt'>.------------------------------------</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74></td>
+  <td class=xl73></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393479463333&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393479463333&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FLORENCEfind
+  9.9.22</td>
+  <td class=xl69 width=316 style='width:237pt'>MAURO ROSARIO 26/04/1966</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA GIUSEPPE CRISTAUDO 2<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=112 style='width:84pt'>ACI S.ANTONIO</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>34.036,09</td>
+  <td align=right>445808</td>
+  <td class=xl72 width=661 style='width:496pt'>negozio-m3-<span
+  style='mso-spacerun:yes'>  </span><font class="font6">avv.debora
+  iozzia-3479463333</font><font class="font0">-m3-ch-g4-cerca doc.
+  richiama-m10-</font><font class="font6">richiama ven13</font></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl73><a
+  href="https://www.cresolution.it/public/documenti/visure/MRARSR66D26A028T.pdf"
+  target="_parent">MRARSR66D26A028T.pdf</a></td>
+  <td class=xl68 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td>0957893388 - casa-m3-ch<span style='mso-spacerun:yes'>  
+  </span>3472750781-m3-fax</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl78 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td>wowerto@hotmail.it</td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl80 style='height:15.75pt'>&nbsp;</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl82>avv.debora iozzi<span style='display:none'>a</span></td>
+  <td class=xl83>&nbsp;</td>
+  <td class=xl73><a href="tel:%203479463333" target="_parent">tel: 3479463333</a></td>
+  <td></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl68 width=194 style='height:15.75pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>coobbl-silvani camilla 11.11.67</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl84 align=right>3926856165</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl73><a
+  href="https://www.cresolution.it/public/documenti/visure/SLVCLL67S51A028H.pdf"
+  target="_parent">SLVCLL67S51A028H.pdf</a></td>
+  <td class=xl68 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74><span style='mso-spacerun:yes'> </span></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393926856165&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393926856165&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl73><a
+  href="https://www.cresolution.it/public/documenti/affido/IFIS/N_074/03658_01689_7c14b467-e49e-4b1a-be1b-1e649a4a0e63.pdf"
+  target="_parent">03658_01689_7c14b467-e49e-4b1a-be1b-1e649a4a0<span
+  style='display:none'>e63.pdf</span></a></td>
+  <td class=xl68 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td>SILVANI.MILLY67@GMAIL.COM</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=6 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td class=xl85>Istituti di bellezza</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'><span style='mso-spacerun:yes'> </span></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+  <td><span style='mso-spacerun:yes'> </span></td>
+  <td></td>
+  <td class=xl86><a
+  href="https://www.paginebianche.it/aci-sant-antonio/beaute-royale-and-s-p-a-societa-a-responsabilita-limitata_22906308"
+  target="_parent"
+  title="Beaute' Royale &amp; S.p.a. Societa' a Responsabilita' Limitata Semplificata">Beaute'
+  Royale &amp; S.p.a. Societa' a Responsabilita' Limitata Semplificata</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td><span style='mso-spacerun:yes'> </span></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+  <td class=xl86>via cristaudo 8 aci sant' antonio</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=6 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td class=xl86></td>
+ </tr>
+ <tr height=31 style='mso-height-source:userset;height:23.25pt'>
+  <td height=31 class=xl88 width=194 style='height:23.25pt;width:146pt'>.--------------------------</td>
+  <td class=xl79 width=316 style='width:237pt'>.--------------------------------------------------</td>
+  <td class=xl79 width=240 style='width:180pt'>.------------------------------------</td>
+  <td class=xl78 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl89 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74></td>
+  <td class=xl73></td>
+ </tr>
+ <tr height=31 style='mso-height-source:userset;height:23.25pt'>
+  <td height=31 class=xl76 width=194 style='height:23.25pt;width:146pt'>&nbsp;</td>
+  <td class=xl77 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl77 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74></td>
+  <td class=xl73></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl90 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl91 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl91 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl91 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl91 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl67></td>
+  <td></td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl68 width=194 style='height:18.75pt;width:146pt'>RUBICON
+  SPV carifin<span style='mso-spacerun:yes'>  </span>05</td>
+  <td class=xl69 width=316 style='width:237pt'>CUTRONA MAURIZIO 29/05/1978</td>
+  <td class=xl69 width=240 style='width:180pt'>C.DA VITELLERIA</td>
+  <td class=xl69 width=112 style='width:84pt'>BELPASSO</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>10.015,40</td>
+  <td class=xl73><a href="tel:%203451597613" target="_parent">tel: 3451597613</a></td>
+  <td class=xl72 width=661 style='width:496pt'>m10-iniz.lav. Da gen- <font
+  class="font8">rit.fine Feb</font><font class="font0"> s.&amp;.s. 1.500</font></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl75 width=240 style='width:180pt'></td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393451597613&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393451597613&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl78 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74></td>
+  <td class=xl73></td>
+ </tr>
+ <tr height=41 style='height:30.75pt'>
+  <td height=41 class=xl68 width=194 style='height:30.75pt;width:146pt'>COMPASS
+  17</td>
+  <td class=xl69 width=316 style='width:237pt'>ALOISI IVANA ANTONIA ANNA
+  24/09/1981, AIELLO SALVATORE 19/09/1979</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA GIUSEPPE MISSORI 20</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>8.595,77</td>
+  <td class=xl74 align=right>3488552460</td>
+  <td class=xl72 width=661 style='width:496pt'>l2-<font class="font8">rit.m3
+  12.00</font><font class="font0">-g5-ch-v6-17.04 in un ufficio
+  richiama-m10-ch-g12</font><font class="font8">-rit. Inizio MAR</font></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>pdr 12-9-22 89x100=8.900</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74><span style='mso-spacerun:yes'> </span></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393488552460&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393488552460&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>diverse prop. 1.12 ct agrumeto
+  acireale</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74><span style='mso-spacerun:yes'> </span></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393471917951&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393471917951&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl68 width=194 style='height:18.75pt;width:146pt'>COMPASS
+  17</td>
+  <td class=xl69 width=316 style='width:237pt'>GRASSO ANTONIO 08/07/1975</td>
+  <td class=xl69 width=240 style='width:180pt'>V. GENERALE DI SAN MARZANO 18</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>17.108,41</td>
+  <td class=xl73><a href="TEL:&nbsp;3478987252" target="_parent">TEL:&nbsp;3478987252</a></td>
+  <td class=xl72 width=661 style='width:496pt'>g29-proposta s.&amp;.s. alla
+  fire 2.000 di 5000/6000-<font class="font8">m17-rit. Metà MAR</font></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl92 width=316 style='width:237pt'>(Attenzione! Pratica gia'
+  lavorata.)</td>
+  <td class=xl93 width=240 style='width:180pt'>Antonello Grasso Remax Platinum</td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl67>TEL:&nbsp;0952862476</td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393478987252&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393478987252&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl92 width=316 style='width:237pt'></td>
+  <td class=xl93 width=240 style='width:180pt'></td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl67></td>
+  <td class=xl73></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl94 width=194 style='height:15.75pt;width:146pt'></td>
+  <td class=xl95 width=316 style='width:237pt'></td>
+  <td class=xl94 width=240 style='width:180pt'></td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl94 width=194 style='height:15.75pt;width:146pt'></td>
+  <td class=xl95 width=316 style='width:237pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl94 width=240 style='width:180pt'></td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=22 style='mso-height-source:userset;height:16.5pt'>
+  <td height=22 class=xl96 width=194 style='height:16.5pt;width:146pt'>.-------------------</td>
+  <td class=xl96 width=316 style='width:237pt'>.--------------------------------</td>
+  <td class=xl96 width=240 style='width:180pt'>.------------------------</td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl67></td>
+  <td class=xl73></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl87 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl87 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74><span style='mso-spacerun:yes'> </span></td>
+  <td></td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl68 width=194 style='height:18.75pt;width:146pt'>FINDOMESTIC
+  10.1.24 carta</td>
+  <td class=xl78 width=316 style='width:237pt'>SPAMPINATO SALVATORE 15/06/1980</td>
+  <td class=xl69 width=240 style='width:180pt'>V. RICCARDO QUARTARARO 1 11</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>2.028,88</td>
+  <td class=xl73><a href="TEL:&nbsp;3493667496&nbsp;" target="_parent">TEL:&nbsp;3493667496&nbsp;</a></td>
+  <td class=xl94 width=661 style='width:496pt'>v30-tmore al cervello<font
+  class="font8"> rit. Fine FEB</font></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FINDOMESTIC
+  22 carta</td>
+  <td class=xl69 width=316 style='width:237pt'>SPAMPINATO SALVATORE</td>
+  <td class=xl69 width=240 style='width:180pt'>V. RICCARDO QUARTARARO 1 11</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>3.307,67</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FINDOMESTIC
+  8.4.24</td>
+  <td class=xl69 width=316 style='width:237pt'>SPAMPINATO SALVATORE</td>
+  <td class=xl69 width=240 style='width:180pt'>V. RICCARDO QUARTARARO 1 11</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>10.871,08</td>
+  <td></td>
+  <td class=xl72 width=661 style='width:496pt'><span
+  style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FINDOMESTIC
+  15.2.24</td>
+  <td class=xl69 width=316 style='width:237pt'>SPAMPINATO SALVATORE</td>
+  <td class=xl69 width=240 style='width:180pt'>V. RICCARDO QUARTARARO 1 11</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>33.845,06</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td>1/1 - VIA RICCARDO QUARTARARO n. 13 P. S1 v.4</td>
+  <td class=xl68 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393493667496&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393493667496&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 width=194 style='height:15.0pt;width:146pt'></td>
+  <td class=xl94 width=316 style='width:237pt'></td>
+  <td class=xl94 width=240 style='width:180pt'></td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl87 width=194 style='height:18.75pt;width:146pt'>FINDOMESTIC
+  22 moto</td>
+  <td class=xl78 width=316 style='width:237pt'>DEL POPOLO FRANCESCO 02/10/1989</td>
+  <td class=xl78 width=240 style='width:180pt'>VIA MADONNA DELLA VIA 7</td>
+  <td class=xl69 width=112 style='width:84pt'>GRAVINA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>6.175,77</td>
+  <td class=xl73><a href="tel:%203451597613" target="_parent">tel: 3451597613</a></td>
+  <td class=xl72 width=661 style='width:496pt'>v30-pdr compass con cambiali - <font
+  class="font8">rit.FEB.x pdr</font></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FINDOMESTIC<span
+  style='mso-spacerun:yes'>  </span>22 carta</td>
+  <td class=xl69 width=316 style='width:237pt'>DEL POPOLO FRANCESCO</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA MADONNA DELLA VIA 7</td>
+  <td class=xl69 width=112 style='width:84pt'>GRAVINA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>2.914,90</td>
+  <td class=xl67 align=right>3408594759</td>
+  <td class=xl72 width=661 style='width:496pt'>v30-irr</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FINDOMESTIC
+  22</td>
+  <td class=xl69 width=316 style='width:237pt'>DEL POPOLO FRANCESCO</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA MADONNA DELLA VIA 7</td>
+  <td class=xl69 width=112 style='width:84pt'>GRAVINA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>1.815,91</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74><span style='mso-spacerun:yes'> </span></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393408594759&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393408594759&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74><span style='mso-spacerun:yes'> </span></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393270834062&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393270834062&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74></td>
+  <td class=xl73><span style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl68 width=194 style='height:18.75pt;width:146pt'>FINDOMESTIC
+  15</td>
+  <td class=xl69 width=316 style='width:237pt'>SICALI CONCETTO 08/08/1978</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA ANSELMI 54</td>
+  <td class=xl69 width=112 style='width:84pt'>MISTERBIANCO</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>5.029,31</td>
+  <td class=xl73><a href="tel:%203923939998" target="_parent">tel: 3923939998</a></td>
+  <td class=xl72 width=661 style='width:496pt'>g5-v6-no disp-m10-ricoverato<font
+  class="font8"> rit.fine FEB</font></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74><span style='mso-spacerun:yes'> </span></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393923939998&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393923939998&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=22 style='mso-height-source:userset;height:16.5pt'>
+  <td height=22 class=xl96 width=194 style='height:16.5pt;width:146pt'>.-------------------</td>
+  <td class=xl96 width=316 style='width:237pt'>.--------------------------------</td>
+  <td class=xl96 width=240 style='width:180pt'>.------------------------</td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl67></td>
+  <td class=xl73></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl87 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl78 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl78 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td><span style='mso-spacerun:yes'> </span></td>
+  <td></td>
+ </tr>
+ <tr height=45 style='height:33.75pt'>
+  <td height=45 class=xl68 width=194 style='height:33.75pt;width:146pt'>FINDOMESTIC
+  17</td>
+  <td class=xl69 width=316 style='width:237pt'>PRATO FLORINDA 16/09/1980</td>
+  <td class=xl69 width=240 style='width:180pt'>V. SPOTO 38</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>17.045,08</td>
+  <td class=xl73><a href="TEL:&nbsp;3401344945" target="_parent">TEL:&nbsp;3401344945</a></td>
+  <td class=xl72 width=661 style='width:496pt'>v30-corso operatore infanzia
+  altri 2 mesi - <font class="font8">rit.m3</font><font class="font0">-g4-ch-v6-no
+  disp-m10-ch-M12-risp.bimbo-m17-m18-ch</font></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FINDOMESTIC
+  carta 17<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=316 style='width:237pt'>PRATO FLORINDA</td>
+  <td class=xl69 width=240 style='width:180pt'>V. SPOTO 38</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>3.071,87</td>
+  <td class=xl97 width=126 style='width:95pt'>g18-msg</td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393401344945&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393401344945&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl68 width=194 style='height:15.75pt;width:146pt'>&nbsp;</td>
+  <td class=xl98 width=316 style='width:237pt'>pdr 15-3-21 19.000 180x105.00</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td>FLORINDAPRATO@GMAIL.COM</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl90 width=194 style='height:15.0pt;width:146pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl91 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl91 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl91 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl91 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl67></td>
+  <td></td>
+ </tr>
+ <tr height=28 style='height:21.0pt'>
+  <td height=28 class=xl68 width=194 style='height:21.0pt;width:146pt'>DANUBIO
+  unicredit 08</td>
+  <td class=xl69 width=316 style='width:237pt'>RAGUSA GAETANO 16/08/1953</td>
+  <td class=xl69 width=240 style='width:180pt'>VLE MARIO RAPISARDI 347</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>10.742,33</td>
+  <td class=xl73><a href="TEL:&nbsp;3425056751" target="_parent">TEL:&nbsp;3425056751</a></td>
+  <td class=xl94 width=661 style='width:496pt'>m28-<font class="font17">rit.l2</font><font
+  class="font18">-rit-v6</font><font class="font0">-m10-g12-v13-m17-m18-ch</font></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl74>Ultima rac: POSITIVA DI OLTRE UN ANNO</td>
+  <td class=xl68 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl73><span style='mso-spacerun:yes'> </span></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393425056751&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393425056751&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=22 style='mso-height-source:userset;height:16.5pt'>
+  <td height=22 class=xl96 width=194 style='height:16.5pt;width:146pt'>.-------------------</td>
+  <td class=xl96 width=316 style='width:237pt'>.--------------------------------</td>
+  <td class=xl96 width=240 style='width:180pt'>.------------------------</td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl67></td>
+  <td class=xl73></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl87 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl92 width=316 style='width:237pt'></td>
+  <td class=xl93 width=240 style='width:180pt'></td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl67></td>
+  <td class=xl73></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>COMPASS
+  23</td>
+  <td class=xl78 width=316 style='width:237pt'>VISCUSO GIOVANNI 22/03/1989</td>
+  <td class=xl78 width=240 style='width:180pt'>PIAZZA DELLE SCUOLE 2</td>
+  <td class=xl69 width=112 style='width:84pt'>ACI CASTELLO</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>17.016,53</td>
+  <td class=xl67 align=right>3496444575</td>
+  <td class=xl72 width=661 style='width:496pt'>v30-l2-ch-m4-risp
+  chiude-g5-v6-m10-g12-m17-s.t.</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74>v6 msg</td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393496444575&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393496444575&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>COMPASS<span
+  style='mso-spacerun:yes'>  </span>23</td>
+  <td class=xl69 width=316 style='width:237pt'>CELESTE DANIELA 25/03/1972</td>
+  <td class=xl69 width=240 style='width:180pt'>V. MULINO A VENTO 206</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>4.550,96</td>
+  <td class=xl67 align=right>3445245123</td>
+  <td class=xl72 width=661 style='width:496pt'>v30-l2-m4-g5-v6-m10-g12-ch</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74>v6 msg</td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393445245123&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393445245123&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74></td>
+  <td>samueluccio34@gmail.com</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl68 width=194 style='height:30.0pt;width:146pt'>COMPASS
+  23 ople mokka 1.6</td>
+  <td class=xl69 width=316 style='width:237pt'>PILLERA ANTONINO -F &amp; C
+  OFFICINE S.R.L. SEMPLIFICATA<span style='mso-spacerun:yes'> 
+  </span>23/06/1996</td>
+  <td class=xl69 width=240 style='width:180pt'>VIALE LORENZO BOLANO 45</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>13.665,40</td>
+  <td class=xl74 align=right>3406276753</td>
+  <td class=xl72 width=661 style='width:496pt'>g29-ch-v30-music-m4-s.t.-g5-v6-m10-g12-ch</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl74>VIA SANTA MARIA DI NUOVALUCE <span style='display:none'>28/B</span></td>
+  <td class=xl68 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74></td>
+  <td class=xl94 width=661 style='width:496pt'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>casella giuseppe 3-4-69</td>
+  <td class=xl78 width=240 style='width:180pt'>v.le castagnola 14</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393406276753&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393406276753&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl68 width=194 style='height:30.0pt;width:146pt'>COMPASS
+  22</td>
+  <td class=xl69 width=316 style='width:237pt'>RANNISI GIUSEPPA 24/10/1946
+  -FRANCO RICCARDO 09/07/1987</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA USTICA 17</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>13.995,65</td>
+  <td class=xl73><a href="TEL:&nbsp;3294939785" target="_parent">TEL:&nbsp;3294939785</a></td>
+  <td class=xl94 width=661 style='width:496pt'>g29-v30-l2-m4-g5-v6-m10-g12-m18-ch</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td>VIA ANTONIO DE CURTIS 76 95045 MISTERBIANCO</td>
+  <td class=xl68 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393294939785&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393294939785&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl68 width=240 style='width:180pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl99 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl71>richiesto 15.000 estinzione 8.770,19 da liquidare 6.229.</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl68 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl78 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl71></td>
+ </tr>
+ <tr height=25 style='mso-height-source:userset;height:18.75pt'>
+  <td height=25 class=xl68 width=194 style='height:18.75pt;width:146pt'>COMPASS
+  28.2.24 scope elettr</td>
+  <td class=xl78 width=316 style='width:237pt'>CULLURA' AGATA ROSARIA
+  31/01/1963</td>
+  <td class=xl69 width=240 style='width:180pt'>V. LUIGI EINAUDI 14</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl69 align=right width=64 style='width:48pt'>227,32</td>
+  <td class=xl67>3391697390 no wa<span style='display:none'>.s.t.</span></td>
+  <td class=xl72 width=661 style='width:496pt'>m3-s.t.</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>COMPASS
+  7.9.23</td>
+  <td class=xl69 width=316 style='width:237pt'>CULLURA' AGATA ROSARIA</td>
+  <td class=xl69 width=240 style='width:180pt'>V. LUIGI EINAUDI 14</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>8.525,00</td>
+  <td class=xl67 align=right>3461588114</td>
+  <td class=xl67>m3-m4-g5-v-6-m10-s.t.-g12-ch</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl80 style='height:15.0pt'>&nbsp;</td>
+  <td class=xl81>1/1 - SANT'AGATA LI BATTIATI(CT) VIA BARRIERA DE<span
+  style='display:none'>L<br />
+    BOSCO n. 13 Piano S1 14 mq</span></td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl83>&nbsp;</td>
+  <td></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393461588114&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393461588114&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl80 style='height:15.0pt'>&nbsp;</td>
+  <td class=xl81>1/1 - SANT'AGATA LI BATTIATI(CT) VIA LUIGI EINAU<span
+  style='display:none'>DI n.<br />
+    14 Piano T 6.5 v</span></td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl83>&nbsp;</td>
+  <td class=xl67><span style='mso-spacerun:yes'> </span></td>
+  <td>agaros@live.ir</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl92 width=316 style='width:237pt'></td>
+  <td class=xl68 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl68 width=194 style='height:30.0pt;width:146pt'>COMPASS
+  18</td>
+  <td class=xl78 width=316 style='width:237pt'>SICILIANO RITA 13/01/1947,
+  CARUSO ROSARIA 19/10/1974</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA TORRE OMBRA 73</td>
+  <td class=xl69 width=112 style='width:84pt'>MASCALUCIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>12.020,25</td>
+  <td class=xl67 align=right>3493229539</td>
+  <td class=xl72 width=661 style='width:496pt'>v30-m4-ch-g5-v6-m10-s.t.</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>pdr 6-12-22 - 9.000 150x 60,00</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393493229539&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393493229539&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74 align=right>3487140278</td>
+  <td class=xl100>v30-g4-parente fuori sede</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74><span style='mso-spacerun:yes'> </span></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393487140278&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393487140278&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74 align=right>3498169999</td>
+  <td>v30-m4-ut.div</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74>no wa</td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393405582217&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393405582217&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74 align=right>3405582217</td>
+  <td class=xl73>ch-m4-risp.chiude-g5-v6-m10-ch- msg- m17-ch</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74><span style='mso-spacerun:yes'> </span></td>
+  <td class=xl74>ROSICARUSO74@GMAIL.COM</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FINDOMESTIC
+  17 carta</td>
+  <td class=xl69 width=316 style='width:237pt'>PITERA' CARMELO 10/12/1952</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA LAZIO 21</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>2.762,88</td>
+  <td class=xl67 align=right>3202743774</td>
+  <td class=xl72 width=661 style='width:496pt'>l2-m4-g5-v6-m10-g12-m17-ch</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FLORENCE
+  find 17</td>
+  <td class=xl69 width=316 style='width:237pt'>PITERA' CARMELO</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA LAZIO 21</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>11.898,33</td>
+  <td align=right>3290743142</td>
+  <td class=xl72 width=661 style='width:496pt'>ut.div</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>pdr 12.1.21 13.490 168x80</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74>v6 msg</td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393202743774&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393202743774&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td>1/2 -<span style='mso-spacerun:yes'>  </span>VIA DELL' ADAMELLO n. 32
+  Piano T 30 mq</td>
+  <td class=xl68 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td><span style='mso-spacerun:yes'> </span></td>
+  <td>https://api.whatsapp.com/send/?phone=393290743142&amp;text&amp;type=phone_number&amp;app_absent=0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl97 width=316 style='width:237pt'>1/2 -<span
+  style='mso-spacerun:yes'>  </span>VIA LAZIO n. 21 Piano 1<span
+  style='mso-spacerun:yes'>  </span>v 4.5 - v 2.5 - v2.5</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl73><a href="mailto:pitecar@libero.it" target="_parent">pitecar@libero.it</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl68 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FINDOMESTIC
+  09</td>
+  <td class=xl78 width=316 style='width:237pt'>COSTANZO GIUSEPPE 27/12/1953</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA MASCALUCIA 38</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>5.552,74</td>
+  <td></td>
+  <td class=xl73><a
+  href="https://www.google.com/maps/place/Via+Mascalucia,+38,+95125+Catania+CT/@37.5422101,15.0745374,17.25z/data=!4m16!1m9!3m8!1s0x1313fd1cb5d9d349:0xc66623461bc50ea5!2sVia+Mascalucia,+38,+95125+Catania+CT!3b1!8m2!3d37.542611!4d15.0746154!10e5!16s%2Fg%2F11c4sqgtcc!3m5!1s0x1313fd1cb5d9d349:0xc66623461bc50ea5!8m2!3d37.542611!4d15.0746154!16s%2Fg%2F11c4sqgtcc?entry=ttu&amp;g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+  target="_parent">Via Mascalucia, 38 - Google Maps</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FINDOMESTIC
+  18</td>
+  <td class=xl69 width=316 style='width:237pt'>COSTANZO GIUSEPPE</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA MASCALUCIA 38</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>15.216,67</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td><span style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FLORENCE
+  find 19.7.22</td>
+  <td class=xl69 width=316 style='width:237pt'>CAVALLARO ROSA 21/09/1955</td>
+  <td class=xl69 width=240 style='width:180pt'>V. PLINIO IL GIOVANE 13</td>
+  <td class=xl69 width=112 style='width:84pt'>GIARRE</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>44.406,00</td>
+  <td class=xl67 align=right>3202743774</td>
+  <td class=xl72 width=661 style='width:496pt'>m3-g5-v6-m10-g12-m17-ch</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl80 style='height:15.0pt'>&nbsp;</td>
+  <td class=xl81>1/1 - GIARRE(CT) VIA PLINIO IL GIOVANE n. 13 Piano<span
+  style='display:none'><br />
+    T-1 v.8</span></td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl83>&nbsp;</td>
+  <td>v6 msg</td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393493086969&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393493086969&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td>CAVALLAROROSA@YAHOO.IT</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl67><span style='mso-spacerun:yes'> </span></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl67></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FLORENCE
+  find 18</td>
+  <td class=xl69 width=316 style='width:237pt'>LICCIARDINO SEBASTIANO
+  06/10/1950</td>
+  <td class=xl69 width=240 style='width:180pt'>V. DE GASPERI 93</td>
+  <td class=xl69 width=112 style='width:84pt'>MILITELLO<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl70 align=right width=64 style='width:48pt'>17.268,65</td>
+  <td align=right>3394887019</td>
+  <td class=xl72 width=661 style='width:496pt'>g5-prt avv. Rit. P.m. x
+  num.-m10-g12-m17-ch</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>FINDOMESTIC
+  18 carta</td>
+  <td class=xl69 width=316 style='width:237pt'>LICCIARDINO SEBASTIANO</td>
+  <td class=xl69 width=240 style='width:180pt'>V. DE GASPERI 93</td>
+  <td class=xl69 width=112 style='width:84pt'>MILITELLO</td>
+  <td class=xl69 align=right width=64 style='width:48pt'>933,71</td>
+  <td class=xl101>095655953</td>
+  <td class=xl72 width=661 style='width:496pt'>ch</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'><span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl74><span style='mso-spacerun:yes'> </span></td>
+  <td class=xl73><a
+  href="https://api.whatsapp.com/send/?phone=393394887019&amp;text&amp;type=phone_number&amp;app_absent=0"
+  target="_parent">https://api.whatsapp.com/send/?phone=393394887019&amp;text&amp;type=phone_number&amp;app_absent=0</a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td></td>
+  <td class=xl73><a href="mailto:s.licciardino@email.it" target="_parent">s.licciardino@email.it</a></td>
+ </tr>
+ <tr height=40 style='height:30.0pt;mso-xlrowspan:2'>
+  <td height=40 colspan=7 style='height:30.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl87 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl78 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl78 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl78 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl89 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>RUBICON
+  SPV plus 08</td>
+  <td class=xl69 width=316 style='width:237pt'>DI GRAZIA ORAZIO ALESSANDRO
+  14/08/1986</td>
+  <td class=xl69 width=240 style='width:180pt'>PZA EROI D'UNGHERIA 23</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>2.550,08</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>RUBICON
+  SPV plus 07</td>
+  <td class=xl69 width=316 style='width:237pt'>DI GRAZIA ORAZIO ALESSANDRO</td>
+  <td class=xl69 width=240 style='width:180pt'>PZA EROI D'UNGHERIA 23</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>26.737,07</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>&nbsp;</td>
+  <td class=xl69 width=316 style='width:237pt'>&nbsp;</td>
+  <td class=xl69 width=240 style='width:180pt'>&nbsp;</td>
+  <td class=xl69 width=112 style='width:84pt'>&nbsp;</td>
+  <td class=xl70 width=64 style='width:48pt'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl68 width=194 style='height:15.0pt;width:146pt'>RUBICON<span
+  style='mso-spacerun:yes'>  </span>plus 06 lancia y 12</td>
+  <td class=xl69 width=316 style='width:237pt'>BIFFI GIOVANNI 01/01/1966</td>
+  <td class=xl69 width=240 style='width:180pt'>VIA SUSANNA 12</td>
+  <td class=xl69 width=112 style='width:84pt'>CATANIA</td>
+  <td class=xl70 align=right width=64 style='width:48pt'>10.687,74</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=194 style='width:146pt'></td>
+  <td width=316 style='width:237pt'></td>
+  <td width=240 style='width:180pt'></td>
+  <td width=112 style='width:84pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=126 style='width:95pt'></td>
+  <td width=661 style='width:496pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
 </html>
